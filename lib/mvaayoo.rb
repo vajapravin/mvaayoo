@@ -12,14 +12,13 @@ module Mvaayoo
     http_conn '/mvaayooapi/APIUtil', ["user=#{MVAAYOO_USER}:#{MVAAYOO_PASSWORD}", "type=0"]
   end
 
-  private
-    # http api handler
-    def http_conn url, params
-      conn = Faraday.new(url: 'http://api.mVaayoo.com') do |faraday|
-        faraday.request :url_encoded
-        faraday.response :logger
-        faraday.adapter Faraday.default_adapter
-      end
-      conn.get "#{url}?#{params.join('&')}"
+  # http api handler
+  def self.http_conn url, params
+    conn = Faraday.new(url: 'http://api.mVaayoo.com') do |faraday|
+      faraday.request :url_encoded
+      faraday.response :logger
+      faraday.adapter Faraday.default_adapter
     end
+    conn.get "#{url}?#{params.join('&')}"
+  end
 end
