@@ -26,8 +26,6 @@ Add content to config/initializers/mvaayoo.rb
 
 ## Usage
 	
-	include Mvaaayoo # add line to include module
-
 	Send Message
 	
 		Mvaayoo.send_message "hey there!!", "9766847415"

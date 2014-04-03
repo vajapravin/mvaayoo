@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Mvaayoo::VERSION
   spec.authors       = ["Pravinkumar Vaja"]
   spec.email         = ["pravinkumar.vaja@synechron.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Integrate mvaayoo in ruby on rails easily}
+  spec.description   = %q{Integrate SMS Functionality in Ruby on Rails Application Easily using mvaayoo.}
+  spec.homepage      = "http://github.com/vajapravin/mvaayoo"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
